@@ -10,7 +10,7 @@ nav a {
 h1 {
     color: steelblue;
 }
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
@@ -19,4 +19,28 @@ img {
 }
 p {
     padding: 10px;
+}
+main {
+    max-width: 750px;
+}
+aside {
+    width: 75rem;
+    margin: 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    background-color: #8affc1;
+    color: black;
+}
+aside img span {
+    width: 200px;
+    height: auto;
+    
+}
+p {
+    padding: 0px;
+}
+footer {
+    margin-top: 15px;
+    border-top: 2px solid black;
+    text-align: center;
 }
