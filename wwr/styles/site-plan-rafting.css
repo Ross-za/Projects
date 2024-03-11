@@ -1,0 +1,60 @@
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root{
+    --primary-color: #000000;
+    --secondary-color: #9DA9A0;
+    --accent-color: #654C4F;
+    --accent2-color: #B26E63;
+
+    --heading-font: 'Archivo', serif;
+    --paragraph-font: 'Poppins', serif;
+
+    --nav-backgroud-color: #654C4F;
+    --nav-link-color: #C0CAAD;
+    --nav-hover-link-color: #B26E63;
+    --nav-hover-backgroud-color: #9DA9A0;
+}
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font)
+    color: var(--primary-color);
+}
+
+header{
+    padding: 22px;
+    background-color: var(--nav-link-color);
+}
+
+p{
+    padding: 20px;
+}
+
+nav{
+    background-color: var(--nav-backgroud-color);
+    display: inline-block;
+}
+
+nav a{
+    display: block;
+    color: var(--nav-link-color);
+    padding: 1px;
+}
+
+nav a:link, nav a:visited{
+    color: var(--nav-link-color);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-backgroud-color);
+}
