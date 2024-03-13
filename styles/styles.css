@@ -17,9 +17,7 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px grey;
 }
-p {
-    padding: 10px;
-}
+
 main {
     max-width: 750px;
 }
@@ -31,7 +29,7 @@ aside {
     background-color: #8affc1;
     color: black;
 }
-aside img span {
+aside img {
     width: 200px;
     height: auto;
     
