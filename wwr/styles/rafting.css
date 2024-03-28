@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #C0CAAD; /* Replace with your primary color */
-    --secondary-color: #9DA9A0; /* Replace with your secondary color */
-    --background-color: #654C4F; /* Replace with your background color */
-    --font-color: #B26E63; /* Replace with your font color */
+    --primary-color: #C0CAAD;
+    --secondary-color: #9DA9A0;
+    --background-color: #654C4F;
+    --font-color: #B26E63;
 }
 
 * {
@@ -95,3 +95,31 @@ footer nav.sociallinks img {
     width: 40px;
     height: 40px;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    display: inline-flexbox;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 2rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+    align-content: space-around;
+    box-shadow: 0 0 3px #fff;
+}
+
+a:hover {
+    color: #0ddf17;
+}
+

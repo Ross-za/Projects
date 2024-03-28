@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #9fa87c;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 20px;
+}
+
+header, h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    background-color: #f9f9f9;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0.2rem;
+    font-size: 1.4rem;
+    background-color: aliceblue;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 5px;
+    background-color: aliceblue;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 5px;
+    background-color: aliceblue;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+    background-color: aliceblue;
+}
+
+label, input, button, select, textarea {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    background-color: aliceblue;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    background-color: #c0ee1a;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
