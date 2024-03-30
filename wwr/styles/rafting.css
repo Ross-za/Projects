@@ -45,10 +45,10 @@ a:hover {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr; /* Logo takes the space it needs, and nav takes the remaining space */
-    align-items: center; /* Vertically center the items */
+    grid-template-columns: auto 1fr;
+    align-items: center;
     width: 100%;
-    padding: 10px 0; /* Add some padding for visual spacing */
+    padding: 10px 0; 
 }
 
 header img {
@@ -56,32 +56,32 @@ header img {
 }
 
 header nav {
-    margin-left: auto; /* Pushes the nav to the right */
-    margin-right: auto; /* Additional margin to the right to center the nav */
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 header nav ul {
     display: inline-block;
     padding: 0;
-    margin: 0; /* Remove default margin and padding */
+    margin: 0; 
 }
 
 header nav li {
     display: inline;
-    margin-right: 10px; /* Add right margin for spacing between items */
+    margin-right: 10px;
 }
 
 header nav a {
     text-decoration: none;
     color: var(--font-color);
-    padding: 5px 10px; /* Add padding for each link */
-    border: 2px solid rgb(255, 254, 254); /* Add border around each link */
+    padding: 5px 10px;
+    border: 2px solid rgb(255, 254, 254);
     display: inline-block;
     color: #fff;
 }
 
 header nav a:hover {
-    background-color: #ddd; /* Optional hover effect */
+    background-color: #ddd;
 }
 
 .hero {
@@ -156,18 +156,17 @@ header nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Adjust the space between the text and the image */
+    gap: 20px;
 }
 
 .history-content img {
-    /* Adjust the size of the image as needed */
-    width: auto; /* Or set a specific width */
-    height: auto; /* Maintain aspect ratio */
+    width: auto; 
+    height: auto;
 }
 
 .history-text {
-    flex: 1; /* Allows the text to fill the available space evenly */
-    padding: 10px; /* Add padding for better spacing */
+    flex: 1;
+    padding: 10px;
 }
 
 .adventure-section h2 {
@@ -177,33 +176,32 @@ header nav a:hover {
 .adventure-images {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Adjust the space between images */
+    gap: 10px;
 }
 
 .adventure-images img {
     flex: 1;
-    width: auto; /* Maintain aspect ratio */
-    height: 150px; /* Example fixed height, adjust as needed */
+    width: auto;
+    height: 150px;
 }
 
 footer {
     display: flex;
-    align-items: center; /* Vertically center the items */
-    justify-content: space-between; /* Space between the paragraph and social links */
-    padding: 10px; /* Add padding for visual spacing */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 footer p {
-    margin: 0; /* Remove default margin */
-    /* Additional styling as needed */
+    margin: 0;
 }
 
 footer .sociallinks {
-    display: flex; /* Align social links in a row */
+    display: flex;
 }
 
 footer .sociallinks a img {
-    width: 40px; /* Specify the size of the social icons */
+    width: 40px;
     height: 40px;
-    margin-left: 10px; /* Space out the icons */
+    margin-left: 10px;
 }
