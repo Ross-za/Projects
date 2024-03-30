@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--font-color);
     background-color: var(--background-color);
     max-width: 1200px;
@@ -31,95 +31,179 @@ p {
     line-height: 1.5;
 }
 
-.social-media a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-.social-media a:hover {
-    text-decoration: underline;
-}
-
-.hero img{
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2em;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.hero article h3 {
-    position: absolute;
-    left: 22%;
-    
-}
-
-.hero article {
-    display: flex;
-    position: absolute;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 50%;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.hero article p{
-    margin-top: 2rem;
-}
-
-.hero article img {
-    display: block;
-    width: 200px;
-    height: auto;
-    position: relative;
-    padding: 1rem;
-}
-
-footer nav.sociallinks img {
-    width: 40px;
-    height: 40px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline;
-}
-
 a {
-    display: inline-flexbox;
-    justify-content: space-around;
     text-decoration: none;
+    color: var(--font-color);
     padding: 10px;
-    padding-left: 2rem;
-    color: #fff;
     font-weight: 700;
     font-size: large;
-    align-content: space-around;
-    box-shadow: 0 0 3px #fff;
 }
 
 a:hover {
     color: #0ddf17;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    width: 100%; /* Ensure the header spans the full width */
+}
+
+header img {
+    margin-right: auto;
+    padding: 10px 10px 10px 0px;
+}
+
+header nav {
+    margin-left: auto; /* Pushes the nav to the right */
+    margin-right: auto; /* Additional margin to the right to center the nav */
+}
+
+header nav ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0; /* Remove default margin and padding */
+}
+
+header nav li {
+    display: inline;
+    margin-right: 10px; /* Add right margin for spacing between items */
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--font-color);
+    padding: 5px 10px; /* Add padding for each link */
+    border: 2px solid rgb(255, 254, 254); /* Add border around each link */
+    display: inline-block;
+    color: #fff;
+}
+
+header nav a:hover {
+    background-color: #ddd; /* Optional hover effect */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 20rem;
+    padding-bottom: 1rem;
+}
+
+.hero h1, .hero article {
+    width: 80%;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.hero h1 {
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    left: 50%;
+    max-width: 60%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.hero article {
+    position: absolute;
+    max-width: 70%;
+    max-height: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    display: flex;
+}
+
+.hero article img {
+    width: 200px;
+    height: auto;
+    align-self: ;
+    padding: 10px 10px 10px 3px;
+}
+
+.hero article p {
+    margin: 0;
+    max-width: 600px;
+    text-align: left;
+    padding-left: 10px;
+    align-content: center;
+}
+
+.history-section h2 {
+    text-align: center;
+}
+
+.history-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust the space between the text and the image */
+}
+
+.history-content img {
+    /* Adjust the size of the image as needed */
+    width: auto; /* Or set a specific width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.history-text {
+    flex: 1; /* Allows the text to fill the available space evenly */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.adventure-section h2 {
+    text-align: center;
+}
+
+.adventure-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the space between images */
+}
+
+.adventure-images img {
+    flex: 1;
+    width: auto; /* Maintain aspect ratio */
+    height: 150px; /* Example fixed height, adjust as needed */
+}
+
+footer {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space between the paragraph and social links */
+    padding: 10px; /* Add padding for visual spacing */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    /* Additional styling as needed */
+}
+
+footer .sociallinks {
+    display: flex; /* Align social links in a row */
+}
+
+footer .sociallinks a img {
+    width: 40px; /* Specify the size of the social icons */
+    height: 40px;
+    margin-left: 10px; /* Space out the icons */
+}
