@@ -44,14 +44,14 @@ a:hover {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Align items to the start */
-    width: 100%; /* Ensure the header spans the full width */
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo takes the space it needs, and nav takes the remaining space */
+    align-items: center; /* Vertically center the items */
+    width: 100%;
+    padding: 10px 0; /* Add some padding for visual spacing */
 }
 
 header img {
-    margin-right: auto;
     padding: 10px 10px 10px 0px;
 }
 
