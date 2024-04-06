@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #C0CAAD;
+    --secondary-color: #657068;
+    --background-color: #654C4F;
+    --font-color: #B26E63;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+p, label {
+    color: var(--secondary-color);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    padding: 10px;
+    font-weight: 700;
+    font-size: large;
+}
+
+a:hover {
+    color: #0ddf17;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header img {
+    width: 150px;
+    padding-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav li {
+    margin-left: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background-color: #ddd;
+    color: var(--background-color);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.newsletter {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter h2, .newsletter p {
+    margin: 10px 0;
+}
+
+.newsletter form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.newsletter label, .newsletter input, .newsletter button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.newsletter input, .newsletter button {
+    padding: 10px;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.newsletter button {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    width: 50%;
+}
+
+.cta {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+}
+
+.cta h2, .cta p {
+    margin: 10px 0;
+}
+
+.cta a {
+    display: inline-block;
+    background-color: var(--font-color);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.grid-layout div {
+    background-color: white;
+    padding: 15px;
+    color: var(--background-color);
+    text-align: center;
+}
+
+.grid-layout img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .sociallinks {
+    display: flex;
+}
+
+footer .sociallinks a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer .sociallinks a img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
