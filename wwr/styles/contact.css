@@ -26,27 +26,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 
-.hero {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    color: #fff;
-}
-
 p {
     color: var(--background-color);
     line-height: 1.5;
@@ -101,8 +80,25 @@ header nav a:hover {
     color: var(--background-color);
 }
 
-h1 {
+.hero {
+    position: relative;
     text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #fff;
 }
 
 .company-info {
@@ -161,9 +157,9 @@ h1 {
 }
 
 .employee-profiles img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
+    width: auto;
+    height: 300px;
+    border-radius: 0;
 }
 
 .contact-form form {
@@ -221,23 +217,55 @@ h1 {
 }
 
 footer {
+    background-color: var(--background-color);
+    color: white;
+    padding: 10px 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer p {
     margin: 0;
+    order: 1;
+    flex: 1 100%;
+    color: var(--secondary-color);
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+
+footer nav:first-of-type {
+    margin-right: auto;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline; 
 }
 
 footer .sociallinks {
+    order: 3; 
     display: flex;
 }
 
+footer .sociallinks a {
+    display: inline-block;
+    margin-left: 10px;
+}
 
 footer .sociallinks a img {
     width: 40px;
     height: 40px;
-    margin-left: 10px;
+    vertical-align: middle;
 }

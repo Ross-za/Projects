@@ -189,22 +189,54 @@ header nav a:hover {
 }
 
 footer {
+    background-color: var(--background-color);
+    color: white;
+    padding: 10px 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer p {
     margin: 0;
+    order: 1;
+    flex: 1 100%;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+
+footer nav:first-of-type {
+    margin-right: auto;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline; 
 }
 
 footer .sociallinks {
+    order: 3; 
     display: flex;
+}
+
+footer .sociallinks a {
+    display: inline-block;
+    margin-left: 10px;
 }
 
 footer .sociallinks a img {
     width: 40px;
     height: 40px;
-    margin-left: 10px;
+    vertical-align: middle;
 }

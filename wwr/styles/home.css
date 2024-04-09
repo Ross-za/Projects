@@ -105,29 +105,24 @@ header nav a:hover {
 .newsletter {
     background-color: var(--primary-color);
     color: white;
-    padding: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
-.newsletter h2, .newsletter p {
-    margin: 10px 0;
-}
 
 .newsletter form {
     display: inline-block;
-    margin-top: 20px;
 }
 
 .newsletter label, .newsletter input, .newsletter button {
     display: block;
     margin: auto;
-    margin-top: 10px;
 }
 
 .newsletter input, .newsletter button {
     padding: 10px;
     width: 80%;
-    margin-top: 5px;
+
 }
 
 .newsletter button {
@@ -136,6 +131,7 @@ header nav a:hover {
     color: white;
     border: none;
     width: 50%;
+    margin-top: 5px;
 }
 
 .cta {
@@ -153,8 +149,6 @@ header nav a:hover {
     display: inline-block;
     background-color: var(--font-color);
     color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
     text-decoration: none;
 }
 
@@ -188,13 +182,38 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 footer p {
     margin: 0;
+    order: 1;
+    flex: 1 100%;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+
+footer nav:first-of-type {
+    margin-right: auto;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline; 
 }
 
 footer .sociallinks {
+    order: 3; 
     display: flex;
 }
 
@@ -208,3 +227,4 @@ footer .sociallinks a img {
     height: 40px;
     vertical-align: middle;
 }
+
