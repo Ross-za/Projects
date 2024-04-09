@@ -84,6 +84,7 @@ header nav a:hover {
     position: relative;
     text-align: center;
     color: white;
+    
 }
 
 .hero img {
@@ -98,6 +99,7 @@ header nav a:hover {
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
+    color: #fff;
 }
 
 .newsletter {
