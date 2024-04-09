@@ -47,41 +47,37 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    width: 100%;
-    padding: 10px 0; 
+    padding: 10px 0;
 }
 
 header img {
-    padding: 10px 10px 10px 0px;
-}
-
-header nav {
-    margin-left: auto; 
-    margin-right: auto; 
+    width: 150px;
+    padding-right: 10px;
 }
 
 header nav ul {
-    display: inline-block;
+    list-style: none;
     padding: 0;
-    margin: 0; 
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 header nav li {
-    display: inline;
-    margin-right: 10px;
+    margin-left: 20px;
 }
 
 header nav a {
-    text-decoration: none;
-    color: var(--font-color);
-    padding: 5px 10px;
-    border: 2px solid rgb(255, 254, 254);
-    display: inline-block;
     color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
 }
 
 header nav a:hover {
     background-color: #ddd;
+    color: var(--background-color);
 }
 
 .hero {
@@ -162,11 +158,18 @@ header nav a:hover {
 .history-content img {
     width: auto; 
     height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    padding: 1rem;
 }
 
 .history-text {
     flex: 1;
     padding: 10px;
+    background-color: #fff;
+    border: #000;
+    border: 1px;
+    color: var(--background-color);
 }
 
 .adventure-section h2 {
