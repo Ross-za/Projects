@@ -26,6 +26,11 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
 p {
     color: var(--background-color);
     line-height: 1.5;
@@ -107,7 +112,6 @@ header nav a:hover {
     align-items: center; 
     justify-content: space-between; 
     flex-wrap: wrap;
-
     }
 
 .company-info h1 {
@@ -157,9 +161,14 @@ header nav a:hover {
 }
 
 .employee-profiles img {
+    margin: 10px auto;
+    display: block;
     width: auto;
     height: 300px;
     border-radius: 0;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
 }
 
 .contact-form form {
